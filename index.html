@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="generate.js"></script>
+</head>
+<body>
+  <h1>Password Generator</h1>
+  <form action="/generate" method="post">
+    <input type="number" name="length" placeholder="Password length">
+    <input type="checkbox" name="uppercase" value="true"> Uppercase
+    <input type="checkbox" name="lowercase" value="true"> Lowercase
+    <input type="checkbox" name="numbers" value="true"> Numbers
+    <input type="checkbox" name="symbols" value="true"> Symbols
+    <input type="submit" value="Generate">
+  </form>
+  <div id="password"></div>
+</body>
+</html>
